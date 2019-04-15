@@ -121,8 +121,9 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 
-# Celery settings to use Redis as a broker
-CELERY_BROKER_URL = 'redis://localhost:6379'
+# Celery settings to use RabbitMQ as a broker
+CELERY_BROKER_URL = 'amqp://guest:guest@localhost//'
+
 CELERY_ACCEPT_CONTENT = ['application/json']
 CELERY_RESULT_SERIALIZER = 'json'
 CELERY_TASK_SERIALIZER = 'json'
