@@ -1,4 +1,4 @@
-CELERY EXAMPLE APP
+CELERY EXAMPLE APP (WITH RABBITMQ)
 ---------------------------------------------------------------------------------------------------------------------
 
 Sencilla aplicación desarrollada con Django 2.2 y Celery 4.3 que 
@@ -6,11 +6,13 @@ muestra un pequeño ejemplo de ejecución de una tarea asincrónica.
 
 La aplicación utiliza RabbitMQ como broker de mensajería.
 
-En relación al ejemplo desarrollado con Redis, la única diferencia
-consiste en la línea definida en el archivo settings que define
-el broker a utilizar:
+**Configuración de Celery en archivo settings para utilizar RabbitMQ como broker:**
 
-    CELERY_BROKER_URL = 'amqp://guest:guest@localhost//'
+```
+
+CELERY_BROKER_URL = 'amqp://guest:guest@localhost//'
+
+```
 
 ---------------------------------------------------------------------------------------------------------------------
 
@@ -31,7 +33,3 @@ Ejecución de la tarea gatillada:
 
 ---------------------------------------------------------------------------------------------------------------------
 
-Github URL: https://github.com/edgar-code-repository/celery-example.git
-
-
----------------------------------------------------------------------------------------------------------------------
