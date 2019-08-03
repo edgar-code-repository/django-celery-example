@@ -14,6 +14,9 @@ CELERY_BROKER_URL = 'redis://localhost:6379'
 
 ```
 
+En el otro branch de este repositorio, se muestra el mismo ejemplo pero
+utilizando RabbitMQ como broker de mensajería.
+
 ---------------------------------------------------------------------------------------------------------------------
 
 Pantalla desde donde se gatilla llamada a tarea celery:
