@@ -6,6 +6,10 @@ muestra un pequeño ejemplo de ejecución de una tarea asincrónica.
 
 La aplicación utiliza Redis como broker de mensajería.
 
+**Configuración de Celery en archivo settings para utilizar Redis como broker:**
+
+CELERY_BROKER_URL = 'redis://localhost:6379'
+
 ---------------------------------------------------------------------------------------------------------------------
 
 Pantalla desde donde se gatilla llamada a tarea celery:
@@ -25,7 +29,3 @@ Ejecución de la tarea gatillada:
 
 ---------------------------------------------------------------------------------------------------------------------
 
-Github URL: https://github.com/edgar-code-repository/celery-example.git
-
-
----------------------------------------------------------------------------------------------------------------------
