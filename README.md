@@ -8,7 +8,11 @@ La aplicación utiliza Redis como broker de mensajería.
 
 **Configuración de Celery en archivo settings para utilizar Redis como broker:**
 
+```
+
 CELERY_BROKER_URL = 'redis://localhost:6379'
+
+```
 
 ---------------------------------------------------------------------------------------------------------------------
 
